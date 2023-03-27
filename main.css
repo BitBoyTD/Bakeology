@@ -1,0 +1,562 @@
+/* fonts */
+
+@font-face{
+    font-family: 'alexBrush';
+    src: url(fonts/AlexBrush-Regular.ttf);
+}
+@font-face{
+    font-family: 'roboto';
+    src: url(fonts/robotoFonts/Roboto-Regular.ttf);
+}
+
+@font-face{
+    font-family: 'arcon';
+    src: url(fonts/Arcon-Regular.otf)
+}
+
+/* background color */
+
+body{
+    background: rgb(250, 248, 241);
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+
+/* Hide Scroll Bar */
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+/* logo (NEEDS WORK!) */
+
+.logo {
+    z-index:10;
+    position: fixed;
+    top: 5px;
+    left: 5px;
+    width: 70px;
+    border: none;
+    border-radius: 10px 10px 10px 10px;
+}
+
+/* nav bar */
+
+.navBuffer {
+    width: 100%;
+    height: 80px;
+    background-color: rgb(250, 234, 177);
+}
+
+nav{
+    box-shadow: 0 5px 18px   black;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left:0px;
+    z-index: 9;
+    display:flex;
+    height: 80px;
+    width: 100%;
+    background-color: rgb(250, 234, 177); 
+    justify-content: flex-end;
+    align-content: center;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+nav a{
+    color: rgb(197, 137, 64);
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px 10px 10px 10px;
+    margin: 10px 50px 10px 50px;
+    border-radius: 15px;
+    font-family: 'arcon';
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+nav a:active{
+    color: rgb(229, 186, 115);
+}
+
+/* Hero Image and text */
+.heroSection{
+    position: relative;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left:0px;
+    display:flex;
+    height: 800px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.heroImage{
+    display:block;
+    width: inherit;
+    height: inherit;
+    z-index: 0;
+}
+
+.heroText{
+    font-size: 100px;
+    color: rgb(197, 137, 64);
+    border: solid 5px rgb(197, 137, 64);
+    border-radius: 25px;
+    background-color: rgb(250, 248, 241);
+    padding: 20px;
+    margin: 0;
+    position: absolute;
+    top: 350px;
+    font-family: 'alexBrush';
+    z-index: 1;
+    box-shadow: 0px 5px 18px black, 0px -5px 18px black;
+}
+
+/* Image and Text next to each other */
+
+.textImageSection {
+    display:flex;
+    height: 400px;
+    width: 100%;
+    flex-direction: row; 
+}
+
+.darkTextImageSection {
+    display:flex;
+    height: 400px;
+    width: 100%;
+    flex-direction: row;
+    background-color:rgb(250, 234, 177);
+}
+
+.dark {
+    background-color:rgb(250, 234, 177);
+}
+
+.imageSection {
+    display: flex;
+    height: 400px;
+    width: 40%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#sideImage1 {
+    height: 80%;
+    border: solid 8px rgb(229, 186, 115);
+    border-radius: 25px;
+}
+
+#sideImage2 {
+    height: 80%;
+    border: solid 8px rgb(229, 186, 115);
+    border-radius: 25px;
+}
+
+#sideImage3 {
+    height: 40%;
+    border: solid 8px rgb(229, 186, 115);
+    border-radius: 25px;
+}
+
+#sideImage4 {
+    height: 60%;
+    border: solid 8px rgb(229, 186, 115);
+    border-radius: 25px;
+}
+
+.productsSideImage {
+    height: 50%;
+    border: solid 8px rgb(229, 186, 115);
+    border-radius: 25px;
+}
+
+.sideImage {
+    height: 80%;
+    border: solid 8px rgb(229, 186, 115);
+    border-radius: 25px;
+}
+
+.textSection{
+    display: flex;
+    height: 400px;
+    width: 60%;
+    flex-direction:column;
+    justify-content: center;
+    align-items: left;
+}
+
+h2{
+    color: rgb(197, 137, 64);
+    font-size: 50px;
+    font-family: 'alexBrush'; 
+    margin: 0px 0px 0px 50px;
+}
+
+p {
+    color: rgb(229, 186, 115);
+    font-size: 20px;
+    font-family: 'arcon';
+    margin: 0 0 0 50px;
+}
+
+/* Our Products Section */
+
+.ourProductsSection {
+    display: flex;
+    height: 600px;
+    width: 100%;
+    background-color: rgb(250, 234, 177);
+    flex-direction: column;
+    justify-content: center;
+}
+
+.products {
+    height: 70%;
+    width: 100%;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.product {
+    border: solid 8px rgb(229, 186, 115);
+    border-radius: 20px;
+    box-shadow: 0 5px 18px black, 5px 0 18px black;
+}
+
+h3 {
+    color: rgb(229, 186, 115);
+    background-color: rgb(250, 248, 241);
+    font-size: 30px;
+    padding: 15px;
+    border: solid 5px rgb(229, 186, 115);
+    border-radius: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* footnote */
+
+footnote {
+    height: 400px;
+    width: 100%px;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(197, 137, 64); 
+}
+
+.footerTitle {
+    color: rgb(250, 248, 241);
+    font-family: 'alexBrush';
+    font-size: 50px;
+    text-decoration: none;
+    margin: 0 0 0 50px;
+}
+
+.footerText {
+    color: rgb(250, 234, 177);
+}
+
+.footerLink {
+    color: rgb(250, 234, 177);
+    font-family: 'arcon';
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.footerLink:hover {
+    color: rgb(250, 248, 241);
+}
+
+.footerLinkContainerContainer {
+    display: flex;
+    height: 400px;
+    width: 40%;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footerLinkContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+
+/*products on products page */
+
+.productSection {
+    display:flex;
+    flex-direction: row;
+    height: 800px;
+    width: inherit;
+}
+
+.leftColumn {
+    display: flex;
+    flex-direction: column;
+    height: 800px;
+    width: 50%;
+}
+
+.rightColumn {
+    display: flex;
+    flex-direction: column;
+    height: 800px;
+    width:50%;
+}
+
+.lightProduct {
+    height: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.darkProduct {
+    height: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color:rgb(250, 234, 177);
+    justify-content: center;
+    align-items: center;
+}
+
+/* Start of Copy and Paste */
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 600px;
+  position: relative;
+  margin: 50px auto auto auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color:rgb(250, 248, 241);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+ 
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgb(197, 137, 64);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: rgb(250, 248, 241);
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  font-family: 'arcon';
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px 40px 2px;
+  background-color: rgb(229, 186, 115);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: rgb(197, 137, 64);
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* End of Copy and Paste */
+
+.slideshowImage {
+    border: solid 8px rgb(197, 137, 64);
+    border-radius: 25px;
+    box-shadow: 0 5px 18px black, 5px 0 18px black;
+}
+
+/* invisible gap for the contact page */
+
+italic {
+    color: rgb(250, 248, 241);
+}
+
+                                                                                        /* Newsletter Form */
+
+
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    color: rgb(197, 137, 64);
+    font-size: 50px;
+    font-family: 'alexBrush';
+    font-weight: bold;
+    background-color: rgb(250, 234, 177);
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 80px;
+  right: 80px;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: rgb(250, 234, 177);
+  border: 8px solid rgb(197, 137, 64);
+  border-radius: 15px;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: rgb(250, 234, 177);
+  border-radius: 15px;
+  font-family: 'arcon';
+  font-size: 20px;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: rgb(250, 248, 241);
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: rgb(229, 186, 115);
+  border-radius: 20px;
+  color: rgb(250, 248, 241);
+  font-size: 20px;
+  font-family: 'arcon';
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: rgb(229, 186, 115);
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover {
+  background-color: rgb(197, 137, 64);
+}  
+
+.open-button:hover {
+    opacity: 9;
+}
+
+.invisible {
+    color:rgb(250, 234, 177);
+}
+
+
+/* Socials */
+
+.socialLinkContainer {
+    height: 400px;
+    width: 40%;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-content: center;
+}
+
+.socialLink {
+    font-family: 'arcon';
+    font-size: 30px;
+    color:rgb(229, 186, 115)
+}
+
+.socialLink:hover {
+    color:rgb(197, 137, 64);
+}

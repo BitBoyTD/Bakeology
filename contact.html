@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Bakeology</title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <div class="navBuffer">
+            <p>if your seeing this then i messed something up</p>
+        </div>
+        <a href="index.html"><img class="logo" src="images/bakeologyLogo.jpg"></a>
+        <nav>
+            <a href="about.html">About</a>
+            <a href="products.html">Products</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <div class="textImageSection">
+            <div class="textSection">
+                <h2>Contact Us</h2>
+                <p><strong>ADDRESS:</strong><italic>gaaaaaaaaaaaap</italic>123 Wheat St Bakerstown Maiduplind<br>
+                <strong>PHONE:</strong><italic>gaaaaaaaaaaaaap..</italic>123 456 7890<br>
+                <strong>EMAIL:</strong><italic>gaaaaaaaaaaaaaaps</italic>bakeology@breadmail.com</p>
+            </div>
+            <div class="imageSection">
+                <img class="sideImage" src="images/shopfront.jpg">
+            </div>
+        </div>
+        <div class="darkTextImageSection">
+            <div class="textSection">
+                <h2>Newsletter</h2>
+                <p>Keep up to date with everything "Bakeology" by joining our weekly email newsletter</p>
+            </div>
+            <div class="imageSection">
+<!-- A button to open the popup form -->
+                <button class="open-button" onclick="openForm()">Sign Up</button>
+            </div>
+        </div>
+        <div class="textImageSection">
+            <div class="textSection">
+                <h2>Social Media</h2>
+                <p>Follow us on Social Media</p>
+            </div>
+            <div class="socialLinkContainer">
+                <a href="index.html" class="socialLink">Facebook</a>
+                <br>
+                <a href="index.html" class="socialLink">Instagram</a>
+                <br>
+                <a href="index.html" class="socialLink">Youtube</a>
+            </div>
+        </div>
+
+<!-- The form -->
+        <div class="form-popup" id="myForm">
+            <form action="/action_page.php" class="form-container">
+            <h2>Sign Up</h2>
+        
+            <label for="email" class="invisible"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" required>
+        
+            <button type="submit" class="btn">Submit</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Cancel</button>
+            </form>
+        </div>
+        
+        <footnote>
+            <div class="textSection">
+                <a href="index.html" class="footerTitle">Bakeology</a>
+                <br>
+                <br>
+                <p class="footerText">Created by Seán Osborne :)<br>Started Coding: 23/03/2023<br>Last Edit: 28/03/2023</p>
+            </div>
+            <div class="footerLinkContainerContainer">
+                <div class="footerLinkContainer1">
+                    <a href="about.html" class="footerLink">About</a>
+                    <br>
+                    <a href="products.html" class="footerLink">Products</a>
+                    <br>
+                    <a href="contact.html" class="footerLink">Contact</a>
+                </div>
+                <div class="footerLinkContainer2">
+                    <a href="index.html" class="footerLink">Facebook</a>
+                    <br>
+                    <a href="index.html" class="footerLink">Instagram</a>
+                    <br>
+                    <a href="index.html" class="footerLink">Youtube</a>
+                </div>
+            </div>
+        </footnote>
+    </body>
+    <script>
+    function openForm() {
+    document.getElementById("myForm").style.display = "block";
+    }
+
+    function closeForm() {
+    document.getElementById("myForm").style.display = "none";
+    }
+    </script>
+</html>
