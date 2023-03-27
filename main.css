@@ -181,6 +181,12 @@ nav a:active{
     border-radius: 25px;
 }
 
+#sideImage5 {
+    height: 60%;
+    border: solid 8px rgb(229, 186, 115);
+    border-radius: 25px;
+}
+
 .productsSideImage {
     height: 50%;
     border: solid 8px rgb(229, 186, 115);
