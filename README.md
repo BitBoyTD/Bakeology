@@ -1,7 +1,7 @@
 # Bakeology
 I made this website for my school digital assessment, I am going to use this space to explain a bit about it.
 
-I used flex-box for just about everything and I only used one main stylesheet, which now has over 500 lines of code on it! That is mainly due to the fact that I used flex-box where I probably should have used "grid" instead and have ended up with a ridiculous amount of CSS classes. I added a favicon after watching a youtube tutorial on how to do it, because W3 Schools didn't give the best description of how to do it. I also removed the scroll bar on the side of the screen so that it all looked a bit nicer.
+Before starting to code I drew up what I wanted the page to look like on my whiteboard, so I did kinda fill that criteria for it. I used flex-box for just about everything and I only used one main stylesheet, which now has over 500 lines of code on it! That is mainly due to the fact that I used flex-box where I probably should have used "grid" instead and have ended up with a ridiculous amount of CSS classes. I added a favicon after watching a youtube tutorial on how to do it, because W3 Schools didn't give the best description of how to do it. I also removed the scroll bar on the side of the screen so that it all looked a bit nicer.
 
 I am pretty proud of my nav bar. I made the logo in the top left corner the home button. To make the logo fit my color scheme I had to throw it into photopea and change all the colours around to match. I had to crop quite a few images in photopea along the way.
 
