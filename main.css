@@ -566,3 +566,7 @@ italic {
 .socialLink:hover {
     color:rgb(197, 137, 64);
 }
+
+.nextToLogo {
+    position: absolute;
+    left: 50px;
